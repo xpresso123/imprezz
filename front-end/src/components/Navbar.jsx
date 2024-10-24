@@ -8,9 +8,9 @@ const Navbar = () => {
         <a className="btn btn-ghost text-xl">IMPREZZ</a>
       </div>
       <div className="flex-none gap-4">
-        <Link to="/" className="btn text-lime-400 btn-ghost">Explore</Link>
-        <Link to="/your-community" className="btn text-lime-400 btn-ghost">Your Communities</Link>
-        <Link to="/create-community" className="btn text-lime-400 btn-ghost">Create Community</Link>
+        <Link to="/" className="btn text-lime-300 btn-ghost">Explore</Link>
+        <Link to="/your-community" className="btn text-lime-300 btn-ghost">Your Communities</Link>
+        <Link to="/create-community" className="btn text-lime-300 btn-ghost">Create Community</Link>
         <div className="form-control">
           <input
             type="text"
