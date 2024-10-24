@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const TaskDetails = () => {
-  // Sample leaderboard data
+  
   const leaderboard = [
     { name: 'Alice', xp: 300 },
     { name: 'Bob', xp: 250 },
@@ -31,7 +31,7 @@ const TaskDetails = () => {
   return (
     <div className="min-h-screen bg-gradient-radial from-gray-900 via-black to-gray-800 text-white p-10">
       <div className="flex gap-8">
-        {/* Left Section: Task Leaderboard */}
+
         <div className="flex flex-col w-2/5 bg-white/10 backdrop-blur-md rounded-lg p-6 shadow-lg">
           <h3 className="text-2xl font-semibold mb-4">Task Leaderboard</h3>
           <div className="max-h-64 overflow-y-auto">
@@ -56,9 +56,9 @@ const TaskDetails = () => {
           </div>
         </div>
 
-        {/* Right Section: Task Info and Submission Form */}
+        {/* Right Section*/}
         <div className="flex-1 space-y-6">
-          {/* Task Information */}
+
           <div className="bg-white/10 backdrop-blur-md rounded-lg p-6 shadow-md">
             <h2 className="text-3xl font-semibold">Subscribe to Community YouTube Channel</h2>
             <p className="mt-4 text-gray-300">
