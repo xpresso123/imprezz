@@ -2,6 +2,9 @@ const cors = require('cors');
 const express = require('express');
 const connectDB = require('./config/db.js');
 const bodyParser = require('body-parser');
+const authRoutes = require("./routes/authRoutes");
+const communityRoutes = require("./routes/communityRoutes");
+const taskRoutes = require("./routes/taskRoutes");
 
 require('dotenv').config();
 
@@ -14,6 +17,9 @@ connectDB();
 
 app.use(express.json());
 
+app.use('/auth', authRoutes);
+app.use('/community', communityRoutes);
+app.use('/task', taskRoutes);
 app.get('/', (_req, res) => {
   res.send('Welcome to imprezz');
 });

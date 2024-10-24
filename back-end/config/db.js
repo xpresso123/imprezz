@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const connectDB = () => {
   mongoose
-    .connect(`${process.env.MONGODB_URI}`)
+    .connect(`${process.env.MONGODB_URI} ` ||" mongodb://localhost:27017/imprezz", )
     .then(() => console.log('🔥 Connected to MongoDB'))
     .catch(err => {
       console.error('💩 Failed to connect to MongoDB', err);
