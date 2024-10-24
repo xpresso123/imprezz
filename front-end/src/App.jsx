@@ -8,6 +8,7 @@ import CreateCommunity from "./pages/CreateCommunity";
 import CommunityDetails from "./pages/CommunityDetails";
 import TaskDetails from "./pages/TaskDetails";
 import NewTaskForm from "./pages/NewTaskForm";
+import LandingPage from "./pages/LandingPage";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
             <Route path="/create-community" element={<CreateCommunity />} />
             <Route path="/details" element={<CommunityDetails />} />
             <Route path="/task" element={<TaskDetails />} />
+            <Route path="/landing" element={<LandingPage />} />
             <Route path="/taskform" element={<NewTaskForm />} />
           </Routes>
         </div>
