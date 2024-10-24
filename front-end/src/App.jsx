@@ -6,6 +6,7 @@ import ExploreCommunity from "./pages/ExploreCommunity";
 import YourCommunity from "./pages/YourCommunity";
 import CreateCommunity from "./pages/CreateCommunity";
 import CommunityDetails from "./pages/CommunityDetails";
+import TaskDetails from "./pages/TaskDetails";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
             <Route path="/your-community" element={<YourCommunity />} />
             <Route path="/create-community" element={<CreateCommunity />} />
             <Route path="/details" element={<CommunityDetails />} />
+            <Route path="/task" element={<TaskDetails />} />
           </Routes>
         </div>
       </div>
